@@ -1,0 +1,19 @@
+!pip install requests python-docx
+translator_text("I know you're somewhere out there, somewhere far away", language_destination)
+def translate_document(path)
+    document = Document(path)
+    full_text = []
+    for paragraph in document.paragraphs:
+        translated_text = translator_text(paragraph.text, language_destination)
+       full_text.append(translated_text)
+    return full_text
+
+tanslate_doc = Document()
+ for line in full_text:
+  translated_doc.add_paragraph(line)
+
+path_translated = path.replace(".docx",f"{translated_destination} .docx")
+translated_doc.save(path_translated)
+return path_translated
+impute_file =
+translate_document(input_file)
